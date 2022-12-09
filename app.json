@@ -1,33 +1,40 @@
 {
   "expo": {
-    "name": "robottoken",
-    "slug": "robottoken",
+    "name": "Robot Token",
+    "slug": "RobotToken",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/app/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
+      "image": "./assets/app/splash.png",
+      "resizeMode": "cover",
       "backgroundColor": "#ffffff"
     },
     "updates": {
-      "fallbackToCacheTimeout": 0
+      "fallbackToCacheTimeout": 4000
     },
     "assetBundlePatterns": [
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.rfael.robottoken"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/app/adaptive.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.rfael.robottoken"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "dd94542e-580d-42e0-960f-db844c5cd5c0"
+      }
     }
   }
 }
